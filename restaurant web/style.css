@@ -1,0 +1,184 @@
+body,h2{
+    margin:0;
+    overflow-x: hidden;
+    min-width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.021);
+}
+
+.hello {
+    background-image:url(../media/meals.jpg);
+    background-size:cover;
+    background-position: center;
+    color:white;
+    padding:1.5em;
+    height:100vh;
+    background-color:rgba(172, 255, 47, 0.329) ;
+    
+    
+}
+header a{
+ text-decoration:none ;
+ color:yellow;
+ min-width: 200px;
+}
+header{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    row-gap: 1em;
+    
+}
+#logo{
+    flex:2;
+    font-size:1.5em ;
+    text-transform: capitalize;
+    min-width:250px ;
+    
+}
+
+nav{
+   text-transform: capitalize; 
+   display: flex;
+   flex:1;
+   min-width: 200px;
+   align-items: center;
+   
+}
+nav a {
+  min-width: 150px;  
+  font-size: 16px;
+  font-weight: bold;
+
+
+}
+    
+ 
+    
+    
+
+a:hover{
+    color:orangered;
+}
+.main{
+    display:flex;
+    height:20vh;
+    justify-content: center;
+    flex-direction:column;
+    padding:1em;
+    margin-top: 2em;
+    
+    
+
+}
+.first {
+    color:aliceblue;
+    font-size:1.5em ;
+    padding-top: 2em;
+
+}
+.second {
+    color:rgb(255, 255, 0);
+    text-transform: capitalize;
+    font-weight:bolder;
+    font-size: 15px;
+    
+    
+    
+}
+.third {
+    
+    padding: 1em;
+    text-transform: capitalize;
+}
+button {
+    font-size: 1em;
+    padding:10px;
+    width:30vw;
+    border-radius: 10px;
+    margin-top: 1.5em;
+    background-color: chartreuse;
+    color:brown;
+    text-transform: uppercase;
+}
+botton:hover {
+    color:green;
+}
+.overall {
+  background-color: rgba(172, 255, 47, 0.329);
+    text-transform: capitalize;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    
+}
+.heading,.location {
+background-color: rgba(172, 255, 47, 0.329) ;
+color:orangered;
+display:flex;
+justify-content: center;
+text-transform: uppercase;
+}
+#loco {
+    
+    text-transform: capitalize;
+}
+th{
+color:rgba(165, 42, 42, 0.986);
+text-transform: uppercase;
+}
+tr {
+    display:flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+.overall td:nth-child(1) {
+    justify-self: left;
+    flex:1;
+}
+.overall td:nth-child(2) {
+    justify-self:right;
+    
+    
+}
+table {
+    width:100%;
+    padding:1em;
+}
+#loco {
+    background-color: rgba(172, 255, 47, 0.329) ;
+    padding:1em;
+    display:flex ;
+    flex-wrap: wrap;
+}
+#loco h2 {
+    color:brown;
+    padding:1em;
+    margin-right: 1em;
+
+}
+#loco div {
+    flex: 2;
+    padding:1em;
+    margin-left: 1em;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+footer {
+    background-color:rgba(172, 255, 47, 0.747) ;
+    padding:1em;
+    text-transform: capitalize;
+}
+ nav i {
+ margin-right: 10px;  
+}
+
+header i {
+    margin-right: 1em;
+}
+footer i {
+    padding:1em;
+    width:40px;
+    border-radius: 50%;
+    text-align: center;
+}
