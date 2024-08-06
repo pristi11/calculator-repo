@@ -1,0 +1,40 @@
+body,h2{
+    background-image: url(https://th.bing.com/th/id/R.2f5f8471b6f3cbe86320f67c736f4843?rik=%2ffjOO2INOprlYg&riu=http%3a%2f%2fst.depositphotos.com%2f1278966%2f4580%2fi%2f950%2fdepositphotos_45805773-stock-photo-colorful-random-number-background-illustration.jpg&ehk=ZT92exNU4IuZ5rjCPhMcIpznhYPca87ds6WBydhW2dw%3d&risl=&pid=ImgRaw&r=0);
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+div{
+    display:grid;
+    justify-content: center;
+    background-color: azure;
+    width: 100%;
+    border-radius: 30px;
+    padding:1px;
+    margin:50px auto;
+    max-width: 400px;
+    min-height:50 px;
+
+    
+}
+
+#input {
+   padding:5px;
+   border-radius: 5%;
+   margin:15px;
+   background-color: rgba(165, 42, 42, 0.452);
+   border:5px solid black;
+}
+button {
+    padding:5px;
+width:100px;
+font-weight: 50px;
+font-size: 20px;
+border:3px solid black;
+border-radius: 3%;
+background-color: brown;
+margin:3px;
+letter-spacing: 1px;
+min-width: 80px;
+}
+
