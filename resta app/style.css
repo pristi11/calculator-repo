@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ body {
+    width: 100%;
+    background-color: #000;
+}
+header {
+    background-color:hsl(230, 17%, 14%);
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+header  h3 {
+    width: 20%;
+    color: #fff;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+    font-size: 2em;
+}
+nav {
+    width: 40%;
+}
+nav  ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20%;
+}
+nav > ul > li > a ,div >a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arima', cursive;
+    font-size: 0.9em;
+}
+li {
+    list-style: none;
+}
+header > div {
+    width: 5%;
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+#menu {
+    width: 100%;
+   background-image: url(https://images.unsplash.com/photo-1611280422374-fa3c1110c16e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZvb2QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+   background-size: cover;
+    padding: 100px 0px 10px;
+    text-align: center;
+    height: 400px;
+}
+#menu > p, #menu > h2, h2 > span {
+    animation-name: scale-up-center;
+    animation-duration: 1.7s;
+}
+@keyframes scale-up-center {
+    0% {transform:scale(.5)}
+   100% {transform:scale(1)}
+}
+#menu > h2 {
+    font-family: 'Cookie', cursive;
+    font-weight: bolder;
+    font-size: 3.5em;
+    color: #fff;
+    padding: 50px auto 10px;
+}
+span {
+    color: red;
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+#menu > p {
+    font-family: 'Arima', cursive;
+    color: rgb(245, 245, 10);
+    padding-bottom: 30px;
+}
+#menu > button, #home > button {
+    width: 150px;
+    height: 35px;
+    background-color:rgb(245, 245, 10);
+    color: #000;
+    font-weight: bolder;
+    font-family: 'Arima', cursive;
+    font-size: 0.9em;
+  animation: slide-rotate-horizontal-top 1.2s linear both;
+}
+@keyframes slide-rotate-horizontal-top {
+  0% {transform: translateY(-150px)rotateX(-90deg)}
+  100% {transform: translateY(0)rotateX(0deg)}
+}
+#home {
+    padding-left: 50px;
+    padding-top: 10px;
+    background-color:hsl(230, 17%, 14%);
+    background-size: cover;
+    color: #fff;
+   padding-bottom: 15px;
+}
+.welcome {
+    font-family: 'Arima', cursive;
+}
+#home > h3 {
+    color:rgb(245, 245, 10);
+    font-style: normal;
+    font-size: 3em;
+    font-family: 'Cookie', cursive;
+}
+#texts {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    width: 900px;
+    font-family: 'Arima', cursive;
+}
+.text-one, .text-two {
+    width: 400px;
+    line-height: 2;
+}
+#food {
+    background-image: url(https://media.istockphoto.com/photos/culinary-background-with-traditional-ingredients-of-italian-cuisine-picture-id1278745986?k=20&m=1278745986&s=612x612&w=0&h=a0rvabf6vBWLwxYbBDSp2-nGrpp_jO96VHK9cd1GcTc=);
+    background-size: contain;
+    background-position: center;
+    color: #fff;
+}
+#food > h3, #orders > h3 {
+    font-family: 'Cookie', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+    text-decoration-color: rgb(245, 245, 10);
+}
+#dishes {
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+   grid-template-rows: 500px 500px;
+    justify-content: center;
+}
+.dish-one, .dish-two, .dish-three, .dish-four, .dish-five, .dish-six {
+    width: 300px;
+    padding: 20px;
+}
+img {
+    width: 280px;
+}
+.price {
+    display: flex;
+    font-family: 'Cookie', cursive;
+    font-size: 1.8em;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cost {
+    color:rgb(245, 245, 10);
+}
+.text {
+    font-family: 'Arima', cursive;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.clock > i, .scale > i, .ban > i {
+    color:rgb(245, 245, 10);
+}
+.clock > span, .scale > span, .ban > span {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Arima', cursive;
+    padding: 2px;
+}
+.dish-one > button,.dish-two > button, .dish-three > button, .dish-four > button, .dish-five > button, .dish-six > button {
+    background-color:rgb(245, 245, 10);
+    margin: 20px;
+    width: 150px;
+    box-shadow: 10px 10px 10px #000;
+    border: none;
+    height: 30px;
+    font-size: 0.9em;
+    color: #000;
+}
+#orders {
+    background-color:hsl(230, 17%, 14%);
+    color: #f9f9f4;
+    padding-top: 40px;
+}
+#steps {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    grid-gap: 20px;
+    padding-top: 45px;
+}
+.step-one > i, .step-two > i, .step-three > i {
+    font-size: 2.5em;
+    color:rgb(245, 245, 10);
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+.step-one > h4, .step-two > h4, .step-three > h4 {
+    font-size: 1.3em;
+   font-family: helvetica;
+    padding-bottom: 10px;
+}
+.step-one > p, .step-two > p, .step-three > p {
+    font-family: 'Arima', cursive;
+    line-height: 1.8;
+    width: 280px;
+}
+
+
+#contact {
+    color: #fff;
+    padding: 30px;
+    background-color:hsl(230, 17%, 14%);
+}
+#contact > p {
+    font-family: 'Cookie', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(245, 245, 10);
+}
+.socials {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+@media screen and (min-width: 967px) and (max-width: 2030px) {
+  .hamburger, .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 966px) {
+   header {
+    height: 50px;
+}
+  .hamburger, .menu {
+display: none;
+  }
+header > h3 {
+    width: 25%;
+    font-size: 1.6em;
+}
+nav {
+    width: 50%;
+}
+nav > ul {
+    top: 20%;
+}
+nav > ul > li > a, div > a {
+    font-size: 0.8em;
+}
+header > div {
+    width: 10%;
+}
+#menu {
+    padding: 100px 0px 10px;
+    height: 400px;
+}
+#menu > h2 {
+    font-size: 2.5em;
+    padding: 70px auto 10px;
+}
+#menu > p {
+    padding-bottom: 60px;
+}
+#home {
+    padding: 5px;
+}
+#home > h3 {
+    font-size: 2.5em;
+}
+#texts {
+    display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
+    width: 600px;
+}
+
+.text-one, .text-two {
+    width: 260px;
+    line-height: 2;
+}
+#food > h3, #orders > h3, #offer > h3 {
+    font-size: 2.3em;
+}
+#dishes {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 470px 470px 470px;
+    text-align: center;
+}
+.dish-one, .dish-two, .dish-three, .dish-four, .dish-five, .dish-six {
+    width: 280px;
+    padding: 10px;
+}
+img {
+    width: 270px;
+}
+#steps {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    text-align: center;
+    grid-gap: 10px;
+    padding-top: 45px;
+}
+
+}
+@media screen and (min-width: 315px) and (max-width: 599px) {
+     header {
+    height: 60px;
+}
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: 1px solid black;
+   background: white;
+    cursor: pointer;
+  }
+  .closeIcon {
+    display: none;
+  }
+  .menu {
+    width: 100%;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .menu > li > a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0px auto 16px;
+    padding: 5px 16px;
+    width: fit-content;
+    width: 100%;
+    max-width: 200px;
+    background-color: gray;
+    font-family: 'Arima', cursive;
+    text-align: center;
+    font-size: 1.0em;
+    display: block;
+    
+  }
+  .showMenu{
+    transform: translateY(0);
+  }
+  
+  header > nav, header > .header-icons {
+    display: none;
+  }
+  header > h3 {
+    font-size: 1.5em;
+    width: 30%;
+    padding-top: 5px;
+  }
+  #menu {
+    padding: 100px 0px 10px;
+    height: 400px;
+}
+#menu > h2 {
+    font-size: 2.3em;
+    padding: 70px auto 10px;
+}
+#menu > p {
+    padding-bottom: 60px;
+}
+#home {
+    padding: 5px;
+}
+#home > h3 {
+    font-size: 2.5em;
+}
+#texts {
+    display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
+    width: 600px;
+}
+.text-one, .text-two {
+    width: 260px;
+    line-height: 2;
+}
+#food > h3, #orders > h3  {
+    font-size: 2.3em;
+}
+#dishes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.dish-one, .dish-two, .dish-three, .dish-four, .dish-five, .dish-six {
+    padding: unset;
+    margin-bottom: 30px;
+}
+#steps {
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#texts {
+    display: flex;
+    flex-direction: column;
+  }
+}
